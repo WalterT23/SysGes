@@ -1,0 +1,31 @@
+<!-- LLAMAR AL ARCHIVO PADRE-->
+{% extends "SysGesApp/base.html" %}
+
+
+{% load static %}
+
+{% block content %}
+
+<!-- ZONA CENTRAL-->
+
+
+    {% for administracion in administracion %}
+        <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" 
+        src="{{administracion.imagen.url}}" alt="" 
+        style="width:50%;">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-lower">{{administracion.titulo}}</span><!-- lower es para grande-->
+            <span class="section-heading-upper">{{administracion.contenido}}</span><!-- upper es para chico-->
+          </h2>         
+        </div>
+      </div>
+    </div>
+  </section>
+    {% endfor %}
+
+{% endblock %}
