@@ -20,10 +20,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'i!iy__)%570l%^^w#4+=k**ba8wd_!v_7-=rmwyvtvk^f_wk1@'
+SECRET_KEY = 'oz9bs&ow(a+my^5%!t)l*=hmt*eju7ca8))p)$92s_$+#n4dg)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True #es para modo de desarrollo cuando se alza en produccion se cambia a false
 
 ALLOWED_HOSTS = []
 
@@ -37,6 +37,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #para que funcionen los templates
+    'SysGesApp',
+    'administracion',
+
 ]
 
 MIDDLEWARE = [
@@ -103,7 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'en-us'
+
+LANGUAGE_CODE = 'es-eu'
 
 TIME_ZONE = 'UTC'
 
@@ -118,3 +124,10 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#decimos a django de donde buscar los archivos multimedia
+#URL PUBLICA QUE APARECERA EN LA BARRA DEL NAVEGADOR
+MEDIA_URL='/media/'
+#DIRECCION DONDE BUSCAR LOS ARCHIVOS MEDIA
+MEDIA_ROOT=Path(__file__).resolve().parent.parent/'media'

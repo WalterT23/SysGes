@@ -1,9 +1,9 @@
-from django.urls import path
-from django.conf import settings
-from django.conf.urls.static import static
-from . import views
+from django.shortcuts import render
+from .models import Administracion
+# Create your views here.
 
-#URLS DE LA APLICACION
-urlpatterns = [
-    path('',views.administracion_view, name="administracion"),
-]
+def administracion_view(request):
+    #le decimos a django que importe todos los objetos de la clase Administracion
+    administracion = Administracion.objects.all()
+    return render(request,"administracion/administracion_tpl.html",{'administracion':administracion})
+
