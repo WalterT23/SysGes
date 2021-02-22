@@ -1,0 +1,40 @@
+<html>
+
+    <head>
+        <!-- debemos decir a la home que va cargar todo lo que hay en la carpeta static -->
+        {% load static %}
+
+
+        <!-- Bootstrap -->
+        <!--SysGes\Apps\SysGesApp\Templates\SysGesApp-->
+        <link href="{% static 'SysGesApp/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <!-- Fonts -->
+
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+
+        <!-- Styles AQUI HACEMOS QUE SE PUEDA EJECUTAR EL CSS DE GESTION-->
+        <link href="{% static 'SysGesApp/css/gestion.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <form id='formulario' method='post' action=''>{% csrf_token %}
+            <div class="container">
+                <section class="page-section clearfix">
+                    <div class="intro-text center-0 text-center bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-4">
+                            <table style="color: green;">
+                                {{formulario}}
+                                <br/>
+                            </table>
+                            
+                        </h2>
+                        <p><input type='submit' value='Registrar' class="btn btn-success" /></p>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </body>
+</html>

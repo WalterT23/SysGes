@@ -9,6 +9,12 @@ urlpatterns = [
     path('configuracion/',views.configuracion_view, name="configuracion"),
     path('desarrollo/',views.desarrollo_view, name="desarrollo"),  
     
+     #PARA ACCESO DE USUARIO
+    path('usuario/nuevo/',views.nuevo_usuario, name="nuevo_usuario"),
+    path('ingresar/',views.ingresar, name="ingresar"),
+    path('privado/',views.privado, name="privado"),
+    #para cerrar la sesion
+    path('cerrar/',views.cerrar, name="cerrar"),     
     
 ]
 

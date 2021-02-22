@@ -1,0 +1,29 @@
+<!-- LLAMAR AL ARCHIVO PADRE-->
+{% extends "SysGesApp/base.html" %}
+
+{% block titulo %}Usuario desactivado {% endblock %}
+
+{%block encabezado %}
+    <h1>El usuario no esta activo</h1>
+{% endblock %}
+{% load static %}
+
+{% block content %}
+
+<!-- ZONA CENTRAL-->
+
+<div class="container">
+        <!--<div class="intro">-->
+            <div class="intro-text center-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4" >
+                    <div style="color: red;">
+                        <p> Contactar con el administrador para solucionar el problema</p>
+                    </div>
+                </h2>
+            </div>
+       <!--</div>--> 
+</div>
+
+
+
+{% endblock %}
