@@ -1,0 +1,35 @@
+
+
+Para el ámbito de nuestro proyecto, el dashboard representa 
+el primer vistazo de lo que puedo hacer en el sistema al ingresar al mismo, según los permisos que tenga. 
+Por ejemplo, 
+si soy administrador, puedo visualizar el listado de Usuarios del sistema con un botón de acceso rápido a la página de administración de Usuarios. 
+Si soy desarrollador podría ver el listado de tareas que tengo asignadas con sus estados. 
+Si soy Project Manager podría ver el listado de tareas que conforman la Línea Base.
+
+
+Lista de Usuarios
+Administracion de Usuarios
+Lista de tareas
+Lista de tareas asignadas con sus estados
+Tareas que conforman una la linea base
+
+MODULOS
+ADMINISTRACION
+	- USUARIOS
+	- ROLES
+	- PRODUCTOS
+	- ROLES POR PRODUCTO
+	- PERMISOS POR PRODUCTO
+	- CONFIGURACIONES DEL SISTEMA (PERMISOS DE ACCESO) 
+CONFIGURACION
+	- GENERACION DE LINEAS BASE
+	- CONTROL DE LINEAS BASE POR PRODUCTO
+	- CAMBIOS DE ELEMENTOS EN LINEAS BASE
+	- INFORME DE ITEMS (DE CADA LINEA BASE CON EL ESTADO Y LA VERSION)
+DESARROLLO
+	- ADMINISTRACION DE LOS ELEMENTOS DE LOS PRODUCTOS
+		- Registro de los requerimientos del producto 
+		- Definicion de fases
+		- Definicion de items por fase  
+		- Historial de modificaciones / reversion
