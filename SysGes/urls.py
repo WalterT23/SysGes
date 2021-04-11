@@ -36,6 +36,9 @@ urlpatterns = [
     #aqui se enlaza con la pag de urls de la aplicacion
     path('', include('SysGesApp.urls')),
     path('administracion/', include('administracion.urls')),
+    path('desarrollo/', include('desarrollo.urls')),
+    #path('configuracion/', include('configuracion.urls')),
+    
 
 
        

@@ -7,7 +7,7 @@ from . import views
 urlpatterns = [
     path('',views.home_view, name="home"),
     path('configuracion/',views.configuracion_view, name="configuracion"),
-    path('desarrollo/',views.desarrollo_view, name="desarrollo"),  
+    #path('desarrollo/',views.desarrollo_view, name="desarrollo"),  
     
      #PARA ACCESO DE USUARIO
     path('usuario/nuevo/',views.nuevo_usuario, name="nuevo_usuario"),

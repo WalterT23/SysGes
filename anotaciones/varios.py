@@ -109,3 +109,10 @@ si devuelve true podemos utilizar la propiedad"""
 >>> miFormulario.cleaned_data  
 cleaned_data = nos permite obtener la informacion del formulario que han sido enviados
 miFormulario=FormularioContacto({'asunto':'prueba','email':'jdprincesita@gmial.com','mensaje':'mensaje de prueba'})
+
+#Para ver en formato de models todas las tablas que hay en la base de datos de nuestro proyecto
+python manage.py inspectdb
+
+#cuando queremos forzar a tomar los cambios de la migracion
+ python manage.py makemigrations --fake
+ python manage.py migrate --fake

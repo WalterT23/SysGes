@@ -9,6 +9,7 @@ class Administracion(models.Model):
     imagen= models.ImageField(upload_to='administracion')
     create= models.DateTimeField(auto_now_add= True)
     updated= models.DateTimeField(auto_now_add= True)
+    code_url = models.CharField(max_length=50)
 
     class Meta:
         verbose_name='administracion'
