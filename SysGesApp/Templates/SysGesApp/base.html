@@ -53,13 +53,14 @@
           <li class="nav-item {% if request.path == '/administracion' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'administracion' %}">ADMINISTRACIÓN</a>
           </li>
-          <li class="nav-item {% if request.path == '/configuracion' %}active{% endif %} px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="{% url 'configuracion' %}">CONFIGURACIÓN</a>
-          </li>
+
           <li class="nav-item {% if request.path == '/desarrollo' %}active{% endif %} px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="{% url 'desarrollo' %}">DESARROLLO</a>
           </li>
- 
+          
+          <li class="nav-item {% if request.path == '/configuracion' %}active{% endif %} px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="{% url 'configuracion' %}">CONFIGURACIÓN</a>
+          </li>
 
         </ul>
       </div>
