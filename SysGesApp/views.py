@@ -21,10 +21,6 @@ def configuracion_view(request):
     return render(request,"SysGesApp/configuracion_tpl.html")
 
 
-def desarrollo_view(request):
-    #nombre de la carpeta dentro de la carpeta template/nombre archivo html
-    return render(request,"SysGesApp/desarrollo_tpl.html")
-
 
 ########### GESTIONAR USUARIO
 #para generar un nuevo usuario

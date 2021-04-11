@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     #para que funcionen los templates
     'SysGesApp',
     'administracion',
+    'desarrollo',
+    #'configuracion',
+    
 
 ]
 
