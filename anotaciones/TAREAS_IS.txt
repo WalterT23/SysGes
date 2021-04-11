@@ -1,0 +1,30 @@
+- Sprint 01: Login + Dashboard inicial
+	* permite ingresar al sistema desde la pantalla de login
+	* se visualiza el dashboard al iniciar con los iconos o botones de acceso a los módulos
+
+- Sprint 02: Módulo Administración (Crear Roles, Crear Usuarios, Asignar Roles a Usuarios)
+	* permite crear y modificar Roles
+	* permite crear y modificar Usuarios
+	* permite asignar roles a Usuarios
+	* al ingresar al dashboard los usuarios ven solo lo que sus permisos le permiten visualizar
+
+- Sprint 03: Modulo Desarrollo (Crear Proyecto, Crear Tareas, Agregar Tareas a proyecto, Conectar Tareas entre sí)
+	* permite crear y modificar Proyectos
+	* permite crear y modificar Tareas.
+		El objeto Tarea tendrá al menos las siguientes propiedades
+		{ id: numerico,
+		 estado: string, // las opciones son[iniciado, pendiente, finalizado]
+		 descripcion: string,
+		 id_tarea_padre: numérico
+		}
+	* permite asignar Tareas a un Proyecto
+	* permite conectar Tareas entre sí (como mínimo secuencialmente).
+
+- Sprint 04: Módulo Gestión de Configuración (crear línea base, Visualizar líneas bases en Tabla)
+	* permite seleccionar ciertas Tareas y crear Línea Base
+	* verificar que las tareas que forman parte de la Línea Base no se pueden editar
+	* al acceder al Dashboard, en la sección de Gestión de Configuración, se visualiza la Tabla de Líneas Base existentes
+	* la Tabla de Líneas Base deberá mostrar Descripción de las Tareas que conforman la Línea Base, estado y versión de cada Tarea.
+
+- Sprint 05: Acceder a los Módulos desde el Dashboard
+	* todas las funcionalidades de las entregas anteriores son accesibles desde el Dashboard
