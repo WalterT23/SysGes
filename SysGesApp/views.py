@@ -16,10 +16,10 @@ def home_view(request):
     return render(request,"SysGesApp/home_tpl.html")
 
 
-
+"""
 def configuracion_view(request):
     return render(request,"SysGesApp/configuracion_tpl.html")
-
+"""
 
 
 ########### GESTIONAR USUARIO

@@ -17,6 +17,9 @@
 
     <!-- Styles AQUI HACEMOS QUE SE PUEDA EJECUTAR EL CSS DE GESTION-->
     <link href="{% static 'SysGesApp/css/gestion.css' %}" rel="stylesheet">
+    <h2 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-lower">INGRESAR AL SISTEMA</span>
+    </h2>
 </head>
 
 <body>
@@ -24,6 +27,7 @@
     <!-- ZONA CENTRAL-->
     <form id='formulario' method='post' action=''>{% csrf_token %}
         <div class="container">
+
             <section class="page-section clearfix">
                 <!--div class="container"-->
                 <!--<div class="intro">-->

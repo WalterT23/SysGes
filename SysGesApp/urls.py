@@ -6,7 +6,7 @@ from . import views
 #URLS DE LA APLICACION
 urlpatterns = [
     path('',views.home_view, name="home"),
-    path('configuracion/',views.configuracion_view, name="configuracion"),
+    #path('configuracion/',views.configuracion_view, name="configuracion"),
     #path('desarrollo/',views.desarrollo_view, name="desarrollo"),  
     
      #PARA ACCESO DE USUARIO

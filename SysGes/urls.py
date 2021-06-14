@@ -37,7 +37,7 @@ urlpatterns = [
     path('', include('SysGesApp.urls')),
     path('administracion/', include('administracion.urls')),
     path('desarrollo/', include('desarrollo.urls')),
-    #path('configuracion/', include('configuracion.urls')),
+    path('configuracion/', include('configuracion.urls')),
     
 
 
