@@ -1,6 +1,6 @@
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(10, 10, 10, 0.966), rgba(56, 56, 56, 0.829)), url("../img/bg_main.jpg");
+  background: linear-gradient(rgba(10, 10, 10, 0.966), rgba(56, 56, 56, 0.829)), url("../img/main_bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -31,7 +31,7 @@ p {
   text-transform: uppercase;
   line-height: 1;
   font-family: 'Raleway';
-  background-color: rgb(18, 48, 56);
+  background-color: rgb(55,55,55);
 }
 
 .site-heading .site-heading-upper {
@@ -41,7 +41,7 @@ p {
 }
 
 .site-heading .site-heading-lower {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 100;
   line-height: 4rem;
 }
@@ -83,7 +83,7 @@ p {
 }
 
 #mainNav {
-  background-color: rgb(18, 48, 56);
+  background-color: rgb(55,55,55);
   font-family: 'Raleway';
 }
 
@@ -137,7 +137,7 @@ p {
     left: 600;
     width: 60%;
     margin-top: 3rem;
-    background-color: rgb(18, 48, 56);
+    background-color: rgb(55,55,55);
     color: rgb(255, 255, 255);
     position: absolute;
     
@@ -166,7 +166,7 @@ p {
   position: relative;
   padding: 3rem;
   margin: 0.5rem;
-  background-color: rgb(18, 48, 56);
+  background-color: rgb(55,55,55);
   color: rgb(255, 255, 255);
   
 }
@@ -234,7 +234,7 @@ p {
 }
 
 .footer {
-   background-color: rgb(18, 48, 56);
+   background-color: rgb(55,55,55);
 }
 
 
