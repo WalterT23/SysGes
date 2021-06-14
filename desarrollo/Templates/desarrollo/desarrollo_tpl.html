@@ -16,16 +16,13 @@
         <div class="intro">
           <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" 
           src="{{desarrollo.imagen.url}}" alt="" 
-          style="width:50%;">
+          style="width: 250px;">
           <div class="intro-text left-0 text-center bg-faded p-5 rounded">
             <h2 class="section-heading mb-4" >
               <!--<span class="section-heading-lower">{{desarrollo.titulo}}</span> lower es para grande-->
-              <a class="nav-link text-uppercase text-expanded" href="{% url 'desarrollo' %}">{{desarrollo.titulo}}</a>
+              <a class="nav-link text-uppercase text-expanded" href="{{desarrollo.code_url}}">{{desarrollo.titulo}}</a>
               <span class="section-heading-upper">{{desarrollo.contenido}}</span><!-- upper es para chico-->
-            </h2>
-              <!-- a href="{% url 'crear_proyecto' %}">Crear</a -->
-              <a href="{{desarrollo.code_url}}">Crear</a>
-                       
+            </h2>                   
           </div>
         </div>
       </div>

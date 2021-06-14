@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Desarrollo,Proyectos,Tareas,Dependencias,proyecto_tareas
+from .models import Desarrollo,Proyectos,Tareas,asignarTareas
 # Register your models here.
 
 
@@ -15,14 +15,10 @@ class ProyectosAdmin(admin.ModelAdmin):
 class TareasAdmin(admin.ModelAdmin):
     readonly_fields=('create','updated')
 
-class DependenciasAdmin(admin.ModelAdmin):
-    readonly_fields=('create','updated')
-
-class proyecto_tareasAdmin(admin.ModelAdmin):
+class asignarTareasAdmin(admin.ModelAdmin):
     readonly_fields=('create','updated')
 
 admin.site.register(Desarrollo, DesarrolloAdmin)
 admin.site.register(Proyectos, ProyectosAdmin)
 admin.site.register(Tareas, TareasAdmin)
-admin.site.register(Dependencias, DependenciasAdmin)
-admin.site.register(proyecto_tareas, proyecto_tareasAdmin)
+admin.site.register(asignarTareas, asignarTareasAdmin)

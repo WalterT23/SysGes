@@ -1,15 +1,17 @@
 from django.shortcuts import render, redirect
 from .models import Desarrollo
 from .forms import FormularioCrearProyecto
-
+from django.contrib.auth.decorators import login_required
 # Create your views here.
 
+@login_required(login_url='/ingresar')
 def desarrollo_view(request):
     #le decimos a django que importe todos los objetos de la clase desarrollo
     desarrollo = Desarrollo.objects.all()
     return render(request,"desarrollo/desarrollo_tpl.html",{'desarrollo':desarrollo})
 
 #para generar un nuevo proyecto
+@login_required(login_url='/ingresar')
 def crear_proyecto(request):
     # if this is a POST request we need to process the form data
     if request.method == 'POST':
