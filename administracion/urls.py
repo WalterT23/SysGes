@@ -6,4 +6,5 @@ from . import views
 #URLS DE LA APLICACION
 urlpatterns = [
     path('',views.administracion_view, name="administracion"),
+    path('rol',views.rol_view, name="rol"),
 ]
