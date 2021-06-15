@@ -21,7 +21,9 @@ class Configuracion(models.Model):
 
 
 class lineaBase(models.Model):
-    tareas= models.ManyToManyField(Tareas)
+    titulo= models.CharField(max_length=200)
+    #tareas= models.ManyToManyField(Tareas)
+    tarea_proy= models.ManyToManyField(asignarTareas)
     create= models.DateTimeField(auto_now_add= True)
     updated= models.DateTimeField(auto_now_add= True)
     
